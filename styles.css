@@ -1,0 +1,45 @@
+body {
+  background-color: #0a192f;
+  color: #ccd6f6;
+  font-family: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body .mono {
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  color: #64ffda;
+}
+
+body header {
+  position: fixed;
+  height: 100px;
+}
+
+body main {
+  padding: 100px 20px 0px 20px;
+}
+
+body main .intro h1 {
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  color: #64ffda;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+body main .intro .big_heading {
+  font-size: 1.9rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+body main .intro h3 {
+  color: #8892b0;
+}
+
+body main .intro p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #a8b2d1;
+  line-height: 1.5rem;
+}
+/*# sourceMappingURL=styles.css.map */

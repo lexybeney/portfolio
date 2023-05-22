@@ -1,0 +1,55 @@
+$main_blue: #0a192f;
+$main_grey: #ccd6f6;
+$neon_green: #64ffda;
+$darker_grey: #a8b2d1;
+$darkest_grey: #8892b0;
+$font_mono: "IBM Plex Mono", "Courier New", Courier, monospace;
+$font_sans: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$nav_height: 100px;
+
+body {
+  background-color: $main_blue;
+  color: $main_grey;
+  font-family: $font_sans;
+
+  .mono {
+    font-family: $font_mono;
+    color: $neon_green;
+  }
+
+  header {
+    position: fixed;
+    height: $nav_height;
+  }
+
+  main {
+    padding: $nav_height 20px 0px 20px;
+
+    .intro {
+      h1 {
+        font-family: $font_mono;
+        color: $neon_green;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+
+      .big_heading {
+        font-size: 1.9rem;
+        margin: 0;
+        font-weight: 600;
+      }
+
+      h3 {
+        color: $darkest_grey;
+      }
+
+      p {
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: $darker_grey;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
