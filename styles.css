@@ -17,6 +17,9 @@ header {
   width: 100vw;
   top: 0;
   left: 0;
+  background-color: #0a192f;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
 }
 
 header .navbar {
@@ -35,6 +38,7 @@ header .navbar {
 
 header .navbar .logo {
   color: #64ffda;
+  letter-spacing: 2px;
 }
 
 header .navbar .burger_menu {
@@ -109,7 +113,24 @@ main .intro p {
   font-size: 1rem;
 }
 
-main .intro .skills {
+main .intro .social {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .intro .social a {
+  margin: 0 15px 0 15px;
+}
+
+main .skills {
   margin: 50px auto 0px auto;
   border: solid 1px #64ffda;
   border-radius: 5px;

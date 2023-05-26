@@ -26,6 +26,8 @@ header {
   width: 100vw;
   top: 0;
   left: 0;
+  background-color: $main_blue;
+  transition: top 0.5s;
 
   .navbar {
     display: flex;
@@ -36,6 +38,7 @@ header {
 
     .logo {
       color: $neon_green;
+      letter-spacing: 2px;
     }
 
     .burger_menu {
@@ -69,6 +72,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h1 {
       font-family: $font_mono;
       color: $neon_green;
@@ -94,16 +98,27 @@ main {
       font-size: 1rem;
     }
 
-    .skills {
-      margin: 50px auto 0px auto;
-      border: solid 1px $neon_green;
-      border-radius: 5px;
-      color: $neon_green;
-      padding: 10px;
-      text-align: center;
-      font-size: 0.8rem;
-      max-width: 250px;
-      display: block;
+    .social {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        margin: 0 15px 0 15px;
+      }
     }
+  }
+
+  .skills {
+    margin: 50px auto 0px auto;
+    border: solid 1px $neon_green;
+    border-radius: 5px;
+    color: $neon_green;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    max-width: 250px;
+    display: block;
   }
 }
