@@ -3,6 +3,7 @@ $main_grey: #ccd6f6;
 $neon_green: #64ffda;
 $darker_grey: #a8b2d1;
 $darkest_grey: #8892b0;
+$navy_lighter: #112240;
 
 $font_mono: "IBM Plex Mono", "Courier New", Courier, monospace;
 $font_sans: "Noto Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -20,6 +21,20 @@ body {
   font-weight: 300;
 }
 
+.blur_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(3px);
+  display: none;
+}
+
+.show_blur {
+  display: block;
+}
+
 header {
   position: fixed;
   height: $nav_height;
@@ -29,7 +44,7 @@ header {
   background-color: $main_blue;
   transition: top 0.5s;
 
-  .navbar {
+  .mobile_navbar {
     display: flex;
     justify-content: space-between;
     padding: 0 25px;
@@ -41,16 +56,61 @@ header {
       letter-spacing: 2px;
     }
 
-    .burger_menu {
-      height: $nav_height;
+    .mobile_menu {
+      background-color: $navy_lighter;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 75vw;
+      margin: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      .burger_line {
-        margin-bottom: 7px;
-        width: 28px;
-        height: 2px;
-        background-color: $neon_green;
+      align-items: center;
+      transition: transform 0.5s;
+      transform: translateX(100%);
+
+      li {
+        list-style: none;
+        font-family: $font_mono;
+        text-align: center;
+        margin: 20px 0;
+        line-height: 1.7rem;
+
+        .menu_number {
+          color: $neon_green;
+        }
+
+        .menu_item {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .showMenu {
+      transform: translateX(0);
+    }
+
+    .burger_container {
+      input {
+        position: absolute;
+        top: 25px;
+        right: 28px;
+      }
+      .burger_menu {
+        height: $nav_height;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .burger_line {
+          margin-bottom: 7px;
+          width: 28px;
+          height: 2px;
+          background-color: $neon_green;
+          position: relative;
+        }
       }
     }
   }

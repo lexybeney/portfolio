@@ -11,3 +11,21 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+const burgerMenu = document.getElementById("burger_check");
+const mobileMenu = document.getElementById("mobile_menu");
+burgerMenu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("showMenu");
+  document.getElementById("blur_overlay").classList.toggle("show_blur");
+});
+
+functiondisable() {
+// To get the scroll position of current webpage
+TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
+
+// if scroll happens, set it to the previous value
+window.onscroll = function() {
+window.scrollTo(LeftScroll, TopScroll);
+        };
+}
