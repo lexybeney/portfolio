@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -86,6 +87,11 @@ header .mobile_navbar .mobile_menu {
           transform: translateX(100%);
 }
 
+header .mobile_navbar .mobile_menu a {
+  text-decoration: none;
+  color: #ccd6f6;
+}
+
 header .mobile_navbar .mobile_menu li {
   list-style: none;
   font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
@@ -102,7 +108,7 @@ header .mobile_navbar .mobile_menu li .menu_item {
   font-size: 0.9rem;
 }
 
-header .mobile_navbar .showMenu {
+header .mobile_navbar .show_menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -111,6 +117,7 @@ header .mobile_navbar .burger_container input {
   position: absolute;
   top: 25px;
   right: 28px;
+  display: none;
 }
 
 header .mobile_navbar .burger_container .burger_menu {
@@ -145,6 +152,14 @@ main h4 {
   color: #64ffda;
   font-weight: 500;
   font-size: 1.3rem;
+}
+
+main .section {
+  scroll-margin-top: 70px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 main .intro {
@@ -203,8 +218,12 @@ main .intro .social a {
   margin: 0 15px 0 15px;
 }
 
+main .about {
+  line-height: 1.5rem;
+}
+
 main .skills {
-  margin: 50px auto 0px auto;
+  margin: 20px auto 0px auto;
   border: solid 1px #64ffda;
   border-radius: 5px;
   color: #64ffda;
@@ -213,5 +232,46 @@ main .skills {
   font-size: 0.8rem;
   max-width: 250px;
   display: block;
+  line-height: 1.5rem;
+}
+
+main .projects {
+  line-height: 1.5rem;
+  margin-top: 50px;
+}
+
+main .projects .project_item {
+  background-color: #112240;
+  padding: 25px 25px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+main .projects .project_item h3 {
+  margin: 0;
+}
+
+main .projects .project_item .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .projects .project_item .links img {
+  width: 21px;
+}
+
+main .projects .project_item .links :first-child img {
+  margin-right: 10px;
+}
+
+main .projects .project_item p {
+  color: #a8b2d1;
 }
 /*# sourceMappingURL=styles.css.map */

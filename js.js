@@ -1,6 +1,12 @@
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+const burgerMenu = document.getElementById("burger_check");
+const mobileMenu = document.getElementById("mobile_menu");
 var prevScrollpos = window.pageYOffset;
+
 window.onscroll = function () {
+  if (mobileMenu.classList.contains("show_menu")) {
+    return;
+  }
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     const header = document.getElementById("header");
@@ -12,20 +18,12 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-const burgerMenu = document.getElementById("burger_check");
-const mobileMenu = document.getElementById("mobile_menu");
 burgerMenu.addEventListener("click", () => {
-  mobileMenu.classList.toggle("showMenu");
+  mobileMenu.classList.toggle("show_menu");
   document.getElementById("blur_overlay").classList.toggle("show_blur");
 });
 
-functiondisable() {
-// To get the scroll position of current webpage
-TopScroll = window.pageYOffset || document.documentElement.scrollTop;
-LeftScroll = window.pageXOffset || document.documentElement.scrollLeft,
-
-// if scroll happens, set it to the previous value
-window.onscroll = function() {
-window.scrollTo(LeftScroll, TopScroll);
-        };
-}
+mobileMenu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("show_menu");
+  document.getElementById("blur_overlay").classList.toggle("show_blur");
+});

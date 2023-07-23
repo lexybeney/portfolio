@@ -11,6 +11,7 @@ $nav_height: 100px;
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -72,6 +73,11 @@ header {
       transition: transform 0.5s;
       transform: translateX(100%);
 
+      a {
+        text-decoration: none;
+        color: $main_grey;
+      }
+
       li {
         list-style: none;
         font-family: $font_mono;
@@ -89,7 +95,7 @@ header {
       }
     }
 
-    .showMenu {
+    .show_menu {
       transform: translateX(0);
     }
 
@@ -98,6 +104,7 @@ header {
         position: absolute;
         top: 25px;
         right: 28px;
+        display: none;
       }
       .burger_menu {
         height: $nav_height;
@@ -125,6 +132,11 @@ main {
     color: $neon_green;
     font-weight: 500;
     font-size: 1.3rem;
+  }
+
+  .section {
+    scroll-margin-top: 70px;
+    transition: transform 0.5s;
   }
 
   .intro {
@@ -170,8 +182,12 @@ main {
     }
   }
 
+  .about {
+    line-height: 1.5rem;
+  }
+
   .skills {
-    margin: 50px auto 0px auto;
+    margin: 20px auto 0px auto;
     border: solid 1px $neon_green;
     border-radius: 5px;
     color: $neon_green;
@@ -180,5 +196,42 @@ main {
     font-size: 0.8rem;
     max-width: 250px;
     display: block;
+    line-height: 1.5rem;
+  }
+
+  .projects {
+    line-height: 1.5rem;
+    margin-top: 50px;
+
+    .project_item {
+      background-color: $navy_lighter;
+      padding: 25px 25px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+
+      h3 {
+        margin: 0;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .links {
+        img {
+          width: 21px;
+        }
+
+        :first-child img {
+          margin-right: 10px;
+        }
+      }
+
+      p {
+        color: $darker_grey;
+      }
+    }
   }
 }
