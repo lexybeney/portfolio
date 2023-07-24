@@ -12,6 +12,35 @@ body {
   font-weight: 300;
 }
 
+.button {
+  border: 1px solid #64ffda;
+  border-radius: 3px;
+  padding: 12px 20px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 40px auto;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #64ffda;
+}
+
+.button:hover {
+  background-color: #64ffda;
+  cursor: pointer;
+}
+
+.button:hover a {
+  color: #0a192f;
+}
+
+.button a {
+  text-decoration: none;
+  color: #64ffda;
+}
+
 .blur_overlay {
   position: fixed;
   top: 0;
@@ -271,7 +300,33 @@ main .projects .project_item .links :first-child img {
   margin-right: 10px;
 }
 
+main .projects .project_item .project_tech_list {
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  font-size: 0.75rem;
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #8892b0;
+}
+
+main .projects .project_item .project_tech_list li {
+  margin-right: 10px;
+}
+
 main .projects .project_item p {
+  color: #a8b2d1;
+}
+
+main .contact {
+  margin: 50px 0px 100px 0px;
+  text-align: center;
+}
+
+main .contact div {
   color: #a8b2d1;
 }
 /*# sourceMappingURL=styles.css.map */

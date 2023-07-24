@@ -22,6 +22,32 @@ body {
   font-weight: 300;
 }
 
+.button {
+  border: 1px solid $neon_green;
+  border-radius: 3px;
+  padding: 12px 20px;
+  text-align: center;
+  width: fit-content;
+  margin: 40px auto;
+  font-family: $font_mono;
+  transition: 0.5s;
+  color: $neon_green;
+
+  &:hover {
+    background-color: $neon_green;
+    cursor: pointer;
+
+    a {
+      color: $main_blue;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $neon_green;
+  }
+}
+
 .blur_overlay {
   position: fixed;
   top: 0;
@@ -229,9 +255,32 @@ main {
         }
       }
 
+      .project_tech_list {
+        font-family: $font_mono;
+        font-size: 0.75rem;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        color: $darkest_grey;
+
+        li {
+          margin-right: 10px;
+        }
+      }
+
       p {
         color: $darker_grey;
       }
+    }
+  }
+
+  .contact {
+    margin: 50px 0px 100px 0px;
+    text-align: center;
+
+    div {
+      color: $darker_grey;
     }
   }
 }
