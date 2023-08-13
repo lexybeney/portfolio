@@ -73,15 +73,17 @@ header {
 
   .mobile_navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 25px;
     align-items: center;
     height: 100%;
 
-    .logo {
-      color: $neon_green;
-      letter-spacing: 2px;
-    }
+    // .logo {
+    //   color: $neon_green;
+    //   letter-spacing: 2px;
+    //   font-weight: 600;
+    //   font-size: 1.3rem;
+    // }
 
     .mobile_menu {
       background-color: $navy_lighter;
@@ -180,24 +182,24 @@ main {
     }
 
     h2 {
-      font-size: 1.9rem;
+      font-size: 1.6rem;
       margin: 0;
       font-weight: 600;
     }
 
     .secondary_heading {
       color: $darkest_grey;
-      line-height: 2.3rem;
+      line-height: 2rem;
     }
 
     p {
       color: $darker_grey;
       line-height: 1.4rem;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     .social {
-      margin-top: 40px;
+      margin-top: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -212,8 +214,14 @@ main {
     line-height: 1.5rem;
   }
 
+  .skillsTitle {
+    font-family: $font_mono;
+    color: $neon_green;
+    text-align: center;
+  }
+
   .skills {
-    margin: 20px auto 0px auto;
+    margin: 15px auto 0px auto;
     border: solid 1px $neon_green;
     border-radius: 5px;
     color: $neon_green;
@@ -223,6 +231,7 @@ main {
     max-width: 250px;
     display: block;
     line-height: 1.5rem;
+    font-family: $font_mono;
   }
 
   .projects {

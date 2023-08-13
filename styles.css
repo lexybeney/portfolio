@@ -71,19 +71,14 @@ header .mobile_navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 0 25px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-}
-
-header .mobile_navbar .logo {
-  color: #64ffda;
-  letter-spacing: 2px;
 }
 
 header .mobile_navbar .mobile_menu {
@@ -214,24 +209,24 @@ main .intro h1 {
 }
 
 main .intro h2 {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   margin: 0;
   font-weight: 600;
 }
 
 main .intro .secondary_heading {
   color: #8892b0;
-  line-height: 2.3rem;
+  line-height: 2rem;
 }
 
 main .intro p {
   color: #a8b2d1;
   line-height: 1.4rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 main .intro .social {
-  margin-top: 40px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,8 +246,14 @@ main .about {
   line-height: 1.5rem;
 }
 
+main .skillsTitle {
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
+  color: #64ffda;
+  text-align: center;
+}
+
 main .skills {
-  margin: 20px auto 0px auto;
+  margin: 15px auto 0px auto;
   border: solid 1px #64ffda;
   border-radius: 5px;
   color: #64ffda;
@@ -262,6 +263,7 @@ main .skills {
   max-width: 250px;
   display: block;
   line-height: 1.5rem;
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
 }
 
 main .projects {
