@@ -156,6 +156,7 @@ header .mobile_navbar .burger_container .burger_menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 header .mobile_navbar .burger_container .burger_menu .burger_line {
