@@ -210,14 +210,14 @@ main .intro h1 {
 }
 
 main .intro h2 {
-  font-size: 1.6rem;
+  font-size: 7.5vw;
   margin: 0;
   font-weight: 600;
 }
 
 main .intro .secondary_heading {
   color: #8892b0;
-  line-height: 2rem;
+  line-height: 7.5vw;
 }
 
 main .intro p {
@@ -245,6 +245,7 @@ main .intro .social a {
 
 main .about {
   line-height: 1.5rem;
+  max-width: 650px;
 }
 
 main .skillsTitle {
@@ -331,5 +332,69 @@ main .contact {
 
 main .contact div {
   color: #a8b2d1;
+}
+
+@media (min-width: 420px) {
+  main h4 {
+    font-size: 4vw;
+  }
+  main .intro {
+    padding: 1rem;
+  }
+  main .intro p {
+    font-size: 1rem;
+  }
+  main .about {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+  main .projects {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main .projects .project_item {
+    margin-bottom: 30px;
+  }
+  main .projects .project_item h3 {
+    font-size: 3.5vw;
+  }
+}
+
+@media (min-width: 500px) {
+  main .contact {
+    padding: 40px;
+  }
+  main .contact div {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  main h4 {
+    font-size: 1.6rem;
+  }
+  main .intro h2 {
+    font-size: 3rem;
+  }
+  main .intro .secondary_heading {
+    line-height: 3rem;
+  }
+  main .skillsTitle {
+    font-size: 1.1rem;
+  }
+  main .skills {
+    font-size: 0.9rem;
+  }
+  main .projects .project_item {
+    padding: 40px;
+  }
+  main .projects .project_item h3 {
+    font-size: 1.2rem;
+  }
+  main .contact {
+    padding: 60px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
