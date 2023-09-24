@@ -120,170 +120,218 @@
 
       <div class="about section" id="about">
         <h4>01. About Me</h4>
-        <p>
-          Hi, I'm Lexy. I began my coding journey at the start of 2022 as I was
-          looking for a career that would provide the stimulation and challenge
-          that I was craving.
-        </p>
-        <p>
-          My interest in web development began when I was playing around with
-          the HTML and CSS on the event platform website my company was using. I
-          very quickly enjoyed figuring out how to manipulate the exisiting
-          codebase to display the elements exactly as I wanted.
-        </p>
-        <p>
-          Fast-forward to today, and I am now a full-stack software engineering
-          bootcamp graduate looking for a full-time role in the sector. I am
-          detail-oriented with an inquisitive nature, meaning that I am always
-          striving to learn new concepts to enhance my work.
-        </p>
-        <p>
-          In March 2023 I took part in the Cognizant full-stack developer coding
-          challenge and made it through to the top 20 finalists.
-        </p>
-      </div>
-      <p class="skillsTitle">Skills:</p>
-      <div class="skills">
-        JavaScript (ES6+) | React | Node.js | Redux | Express | SQL | API |
-        Bootstrap | GitHub | SASS | Flexbox
+        <div class="aboutContainer">
+          <div>
+            <p>
+              Hi, I'm Lexy. I began my coding journey at the start of 2022 as I
+              was looking for a career that would provide the stimulation and
+              challenge that I was craving.
+            </p>
+            <p>
+              My interest in web development began when I was playing around
+              with the HTML and CSS on the event platform website my company was
+              using. I very quickly enjoyed figuring out how to manipulate the
+              exisiting codebase to display the elements exactly as I wanted.
+            </p>
+            <p>
+              Fast-forward to today, and I am now a full-stack software
+              engineering bootcamp graduate looking for a full-time role in the
+              sector. I am detail-oriented with an inquisitive nature, meaning
+              that I am always striving to learn new concepts to enhance my
+              work.
+            </p>
+            <p>
+              In March 2023 I took part in the Cognizant full-stack developer
+              coding challenge and made it through to the top 20 finalists.
+            </p>
+          </div>
+
+          <div class="skills">
+            <p class="skillsTitle">Skills:</p>
+            <div class="skillsList">
+              JavaScript (ES6+) | React | Node.js | Redux | Express | SQL | API
+              | Bootstrap | GitHub | SASS | Flexbox
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="projects section" id="projects">
         <h4>02. My Projects</h4>
-        <div class="project_item">
-          <div class="title">
-            <h3>SpareGrub</h3>
-            <div class="links">
-              <a href="https://www.sparegrub.co.uk" target="_blank"
-                ><img
-                  src="assets/icons/link - neon green.svg"
-                  alt="Link out button"
-              /></a>
-              <a
-                href="https://github.com/lexybeney/sparegrub-frontend"
-                target="_blank"
-              >
-                <img
-                  src="assets/icons/github - neon green.svg"
-                  alt="Github Logo"
-                />
-              </a>
+        <div class="projectContainer sparegrub">
+          <div class="projectListing">
+            <div class="project_item">
+              <div class="title">
+                <h3>SpareGrub</h3>
+                <div class="links">
+                  <a href="https://www.sparegrub.co.uk" target="_blank"
+                    ><img
+                      src="assets/icons/link - neon green.svg"
+                      alt="Link out button"
+                  /></a>
+                  <a
+                    href="https://github.com/lexybeney/sparegrub-frontend"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/icons/github - neon green.svg"
+                      alt="Github Logo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <p>
+                SpareGrub is a web application built using React for the
+                front-end and an Express server for the back-end, which is
+                connected to an SQL database. It follows basic e-commerce
+                structure where users are able to create profiles, upload items,
+                add items to their basket and checkout items.
+              </p>
+              <p>
+                This is the first application that I have built by myself from
+                conception through to deployment.
+              </p>
+              <ul class="project_tech_list">
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>SQL</li>
+                <li>Node.js</li>
+                <li>Bootstrap</li>
+                <li>GSAP</li>
+                <li>Redux</li>
+                <li>Joi Validation</li>
+                <li>Bing Maps API</li>
+              </ul>
             </div>
           </div>
-
-          <p>
-            SpareGrub is a web application built using React for the front-end
-            and an Express server for the back-end, which is connected to an SQL
-            database. Users are able to create profiles, upload items, add items
-            to their basket and checkout items.
-          </p>
-          <p>
-            This is the first application that I have built by myself from
-            conception through to deployment.
-          </p>
-          <ul class="project_tech_list">
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>SQL</li>
-            <li>Node.js</li>
-            <li>Bootstrap</li>
-            <li>GSAP</li>
-            <li>Redux</li>
-            <li>Bing Maps API</li>
-          </ul>
-        </div>
-        <div class="project_item">
-          <div class="title">
-            <h3>Homage Page</h3>
-            <div class="links">
-              <a
-                href="https://englandnetball.alexisbeney.co.uk/"
-                target="_blank"
-                ><img
-                  src="assets/icons/link - neon green.svg"
-                  alt="Link out button"
-              /></a>
-              <a
-                href="https://github.com/lexybeney/ch12-homage-england-netball"
-                target="_blank"
-              >
-                <img
-                  src="assets/icons/github - neon green.svg"
-                  alt="Github Logo"
-                />
-              </a>
-            </div>
+          <div class="projectImage">
+            <img
+              src="./assets/images/sparegrubImage.png"
+              alt="SpareGrub Image"
+            />
           </div>
-
-          <p>
-            A copycat version of the England Netball website to demonstrate core
-            CSS and SCSS capabilities.
-          </p>
-          <ul class="project_tech_list">
-            <li>SCSS</li>
-            <li>HTML</li>
-          </ul>
         </div>
 
-        <div class="project_item">
-          <div class="title">
-            <h3>Weather Channel</h3>
-            <div class="links">
-              <a href="https://www.weatherapp.alexisbeney.co.uk" target="_blank"
-                ><img
-                  src="assets/icons/link - neon green.svg"
-                  alt="Link out button"
-              /></a>
-              <a
-                href="https://github.com/lexybeney/vanilla-js-weather-api"
-                target="_blank"
-              >
-                <img
-                  src="assets/icons/github - neon green.svg"
-                  alt="Github Logo"
-                />
-              </a>
-            </div>
+        <div class="projectContainer homage">
+          <div class="projectImage">
+            <img
+              src="./assets/images/homageImage.png"
+              alt="Homage Page Image"
+            />
           </div>
-          <p>
-            Single page weather channel using the gelocation API or third-party
-            integrated API.
-          </p>
-          <ul class="project_tech_list">
-            <li>JavaScript</li>
-            <li>Geolocation API</li>
-          </ul>
+          <div class="project_item">
+            <div class="title">
+              <h3>Homage Page</h3>
+              <div class="links">
+                <a
+                  href="https://englandnetball.alexisbeney.co.uk/"
+                  target="_blank"
+                  ><img
+                    src="assets/icons/link - neon green.svg"
+                    alt="Link out button"
+                /></a>
+                <a
+                  href="https://github.com/lexybeney/ch12-homage-england-netball"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icons/github - neon green.svg"
+                    alt="Github Logo"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <p>
+              The aim of this project was to create a copycat version of a site
+              of my choosing to demonstrate core CSS and SCSS capabilities. I
+              chose the England Netball website and imitated every aspect of the
+              site with just CSS.
+            </p>
+            <ul class="project_tech_list">
+              <li>SCSS</li>
+              <li>HTML</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="project_item">
-          <div class="title">
-            <h3>Simpsons Quotes</h3>
-            <div class="links">
-              <a href="https://simpsons.alexisbeney.co.uk/" target="_blank"
-                ><img
-                  src="assets/icons/link - neon green.svg"
-                  alt="Link out button"
-              /></a>
-              <a
-                href="https://github.com/lexybeney/simpsons-api"
-                target="_blank"
-              >
-                <img
-                  src="assets/icons/github - neon green.svg"
-                  alt="Github Logo"
-                />
-              </a>
+        <div class="projectContainer weather">
+          <div class="project_item">
+            <div class="title">
+              <h3>Weather Channel</h3>
+              <div class="links">
+                <a
+                  href="https://www.weatherapp.alexisbeney.co.uk"
+                  target="_blank"
+                  ><img
+                    src="assets/icons/link - neon green.svg"
+                    alt="Link out button"
+                /></a>
+                <a
+                  href="https://github.com/lexybeney/vanilla-js-weather-api"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icons/github - neon green.svg"
+                    alt="Github Logo"
+                  />
+                </a>
+              </div>
             </div>
+            <p>
+              This is a single page weather channel created to practice using
+              the gelocation API or third-party integrated API. It demonstrates
+              the ability to create dynamic content based on the API responses.
+            </p>
+            <ul class="project_tech_list">
+              <li>JavaScript</li>
+              <li>API (Geolocation and third-party)</li>
+            </ul>
           </div>
-          <p>
-            Class based React app to randomly generate Simpson's quotes via an
-            API with functionality to like, search and delete.
-          </p>
-          <ul class="project_tech_list">
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Third-party API</li>
-          </ul>
+          <div class="projectImage">
+            <img
+              src="./assets/images/weatherappImage.png"
+              alt="Weather App Image"
+            />
+          </div>
+        </div>
+
+        <div class="projectContainer simpsons">
+          <div class="projectImage">
+            <img src="./assets/images/simpsonsImage.png" alt="Simpsons Image" />
+          </div>
+          <div class="project_item simpsons">
+            <div class="title">
+              <h3>Simpsons Quotes</h3>
+              <div class="links">
+                <a href="https://simpsons.alexisbeney.co.uk/" target="_blank"
+                  ><img
+                    src="assets/icons/link - neon green.svg"
+                    alt="Link out button"
+                /></a>
+                <a
+                  href="https://github.com/lexybeney/simpsons-api"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/icons/github - neon green.svg"
+                    alt="Github Logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <p>
+              This is a class based React app demonstrating my ability to make
+              API calls, consume the response and display it accordingly. There
+              is also basic state management with a live like counter and the
+              ability to search and delete quotes.
+            </p>
+            <ul class="project_tech_list">
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Third-party API</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -291,7 +339,7 @@
         <h4>03. Contact</h4>
         <div>
           If you would like to discuss my portfolio further or find out more,
-          please reach out
+          please reach out:
         </div>
         <div class="button">
           <a href="mailto:alexisbeney@gmail.com">Get in touch</a>

@@ -7,6 +7,7 @@ window.onscroll = function () {
   if (mobileMenu.classList.contains("show_menu")) {
     return;
   }
+
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     const header = document.getElementById("header");

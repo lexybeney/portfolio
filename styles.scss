@@ -70,6 +70,7 @@ header {
   left: 0;
   background-color: $main_blue;
   transition: top 0.5s;
+  z-index: 100;
 
   .mobile_navbar {
     display: flex;
@@ -220,32 +221,34 @@ main {
 
   .about {
     line-height: 1.5rem;
-    max-width: 650px;
-  }
 
-  .skillsTitle {
-    font-family: $font_mono;
-    color: $neon_green;
-    text-align: center;
-  }
-
-  .skills {
-    margin: 15px auto 0px auto;
-    border: solid 1px $neon_green;
-    border-radius: 5px;
-    color: $neon_green;
-    padding: 10px;
-    text-align: center;
-    font-size: 0.8rem;
-    max-width: 250px;
-    display: block;
-    line-height: 1.5rem;
-    font-family: $font_mono;
+    .skillsTitle {
+      font-family: $font_mono;
+      color: $neon_green;
+      text-align: center;
+    }
+    .skillsList {
+      margin: 15px auto 0px auto;
+      border: solid 1px $neon_green;
+      border-radius: 5px;
+      color: $neon_green;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.8rem;
+      max-width: 250px;
+      display: block;
+      line-height: 1.5rem;
+      font-family: $font_mono;
+    }
   }
 
   .projects {
     line-height: 1.5rem;
     margin-top: 50px;
+
+    .projectImage {
+      display: none;
+    }
 
     .project_item {
       background-color: $navy_lighter;
@@ -378,16 +381,26 @@ main {
         line-height: 3rem;
       }
     }
-    .skillsTitle {
-      font-size: 1.1rem;
-    }
-    .skills {
-      font-size: 0.9rem;
+
+    .about {
+      .skills {
+        .skillsTitle {
+          font-size: 1.1rem;
+        }
+        .skillsList {
+          font-size: 0.9rem;
+        }
+      }
     }
 
     .projects {
       .project_item {
         padding: 40px;
+        position: relative;
+        max-width: 530px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+
         h3 {
           font-size: 1.2rem;
         }
@@ -403,6 +416,10 @@ main {
 @media (min-width: 760px) {
   .blur_overlay {
     display: none;
+  }
+
+  h4 {
+    padding-top: 60px;
   }
   header {
     .mobile_navbar {
@@ -460,6 +477,100 @@ main {
       p {
         font-size: 1rem;
         max-width: 700px;
+      }
+    }
+
+    .about {
+      margin-bottom: 60px;
+      .skillsTitle {
+        display: none;
+      }
+      .skillsList {
+        border: none;
+        max-width: none;
+      }
+    }
+
+    .contact {
+      padding-bottom: 100px;
+      // margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: 820px) {
+  main {
+    .projects {
+      .projectContainer {
+        display: flex;
+        position: relative;
+        margin-bottom: 70px;
+
+        .projectImage {
+          display: block;
+          img {
+            width: 250px;
+          }
+        }
+      }
+      .sparegrub {
+        justify-content: flex-start;
+
+        .projectImage {
+          position: absolute;
+          left: 480px;
+          bottom: 0px;
+        }
+      }
+
+      .homage {
+        justify-content: flex-end;
+
+        .project_item {
+          margin-right: 0px;
+        }
+
+        .projectImage {
+          position: absolute;
+          right: 550px;
+          bottom: -20px;
+          z-index: 5;
+
+          img {
+            width: 200px;
+          }
+        }
+      }
+
+      .weather {
+        justify-self: flex-start;
+        .project_item {
+          margin-left: 0;
+        }
+        .projectImage {
+          img {
+            height: 180px;
+            width: 120px;
+          }
+          position: absolute;
+          left: 550px;
+          bottom: 0;
+        }
+      }
+
+      .simpsons {
+        justify-self: flex-end;
+
+        .project_item {
+          margin-right: 0;
+        }
+
+        .projectImage {
+          position: absolute;
+          right: 500px;
+          bottom: -40px;
+          z-index: 5;
+        }
       }
     }
   }
